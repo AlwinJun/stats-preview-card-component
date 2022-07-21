@@ -69,7 +69,7 @@ p {
   margin: 6em auto;
   border-radius: 8px;
   background-color: var(--bg-clr-card);
-  max-width: 75em;
+  max-width: 70em;
 }
 
 .content-img {
@@ -114,6 +114,8 @@ p {
   gap: 1.5em;
 }
 
+/* =====Desktop and tablet layout===== */
+
 @media (min-width: 40em) {
   .container {
     display: flex;
@@ -140,18 +142,41 @@ p {
   .content-body {
     width: 50%;
     order: 1;
+    text-align: center;
+  }
+
+  .content-body-container {
+    width: 80%;
+    margin: 0;
+    padding: 4em 0 1em 3.5em;
+  }
+
+  /* Breakpoint for tablet size : content-info section */
+
+  .content-body-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* For bigger screen */
+
+@media (min-width: 50em) {
+  .content-body {
     text-align: left;
   }
 
   .content-body-container {
     width: 80%;
     margin: 0;
-    padding: 4em 0 0 3.5em;
+    padding: 4em 0 1em 3.5em;
   }
 
   .content-body-container p {
     width: 80%;
-    margin-bottom: 4.5em;
+    margin-bottom: 3em;
   }
 
   .content-body-info {
@@ -159,6 +184,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 }
 
