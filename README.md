@@ -8,7 +8,15 @@ This is a project solution for the [Stats preview card component challenge at FE
 
 ## Links
 
-<!-- Project design comparison -- [https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62) -->
+Project design comparison -- [https://www.frontendmentor.io/solutions/responsive-stats-preview-card-component-with-3-breakpoints-lqFnSEYy2R](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-component-with-3-breakpoints-lqFnSEYy2R)
+Project Live site url-- [https://stats-preview-card-component-aj.netlify.app/](https://stats-preview-card-component-aj.netlify.app/)
+
+## Built With
+
+Mobile First Approach
+HTML5
+CSS3 Custom Properties
+Flexbox
 
 ## Author
 
