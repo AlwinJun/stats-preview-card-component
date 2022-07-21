@@ -35,11 +35,17 @@ body {
 h1 {
   font-size: 1.875rem;
   color: var(--clr-white-1);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
 }
 
 h1 span {
   color: var(--clr-accent);
-  line-height: 1.4;
+}
+
+p {
+  margin-bottom: 2rem;
+  line-height: 1.5;
 }
 
 .info-number,
@@ -48,7 +54,7 @@ h1 span {
 }
 
 .info-number {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--clr-white-75);
   font-weight: var(--fw-700);
 }
@@ -66,7 +72,20 @@ h1 span {
   max-width: 75em;
 }
 
-.content-img bg-img {
+.content-img {
+  position: relative;
+}
+
+.content-img::after {
+  content: "";
+  background-color: hsla(277, 70%, 33%, 0.616);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.content-img img {
   display: block;
   max-width: 100%;
 }
@@ -82,4 +101,42 @@ h1 span {
 .content-body {
   padding: 1.5em;
   text-align: center;
+}
+
+.content-body-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+footer {
+  text-align: center;
+  color: var(--clr-white-6);
+}
+
+footer a {
+  color: var(--clr-accent);
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--clr-accent);
+  bottom: -2px;
+  right: 50px;
+  left: 50px;
+  transform: rotateX(90deg);
+  transition: 0.3s;
+}
+
+a:hover::after {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--clr-accent);
+  bottom: -2px;
+  right: -5px;
+  left: -3px;
+  transform: rotateX(180deg);
 }
