@@ -21,38 +21,49 @@
   --clr-white-6: ;
 }
 
-body {
+/* body {
   font-size: var(--fs-body);
   font-family: var(--ff-primary);
   font-weight: var(--fw-400);
   color: var(--clr-white-6);
   background-color: var(--bg-clr-body);
   padding: 2em;
-}
+} */
 
 /* =====TYPOGRPAHY===== */
 
 /* =====LAYOUT===== */
 
-.container {
+/* .container {
   margin: 6em auto;
   border-radius: 8px;
   background-color: var(--bg-clr-card);
   max-width: 75em;
-}
+} */
 
-.content-img img {
+.content-img bg-img {
   display: block;
   max-width: 100%;
+  min-height: 100%;
 }
 
-.content-img .img-mobile {
+.bg-img {
+  background-image: url("/images/image-header-mobile.jpg");
+  display: block;
+  max-width: 100%;
+  min-height: 100%;
+  background-size: 100% 100px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+/* .content-img .img-mobile {
   border-radius: 8px 8px 0 0;
 }
 
 .content-img .img-desktop {
   display: none;
-}
+} */
 
 .content-body {
   padding: 1.5em;
